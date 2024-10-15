@@ -26,3 +26,18 @@ console.log(age);
 const {name:nam, age: year}=actor;
 console.log(nam);
 console.log(year);
+
+// ArrayDestruct
+
+const numbers=[12,34];
+const [first,second]=numbers;
+const [z,y]=[13,66]
+
+// advance like swap;
+
+function doubleThem(a,b){
+    return [a*2,b*3];
+}
+
+const [l,m]=doubleThem(2,2);
+console.log(l,m);
