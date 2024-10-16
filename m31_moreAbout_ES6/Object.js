@@ -27,18 +27,43 @@
 // A.speak('Lenevo');
 
 
-class Product{
+// class Product{
     
-    constructor (name,sub){
-        this.name=name;
-        this.sub=sub;
-    }
+//     constructor (name,sub){
+//         this.name=name;
+//         this.sub=sub;
+//     }
 
-    speak(talk){
-        console.log(`talking about ${talk}`);
+//     speak(talk){
+//         console.log(`talking about ${talk}`);
+//     }
+// }
+
+// const A=new Product('Esan','physic');
+// console.log(A);
+// A.speak('Lenevo');
+
+
+
+class Vehicle{
+    constructor(name,price){
+        this.name=name;
+        this.price=price;
+    } 
+
+    move(){
+        console.log(`Can move`);
     }
 }
+//Inheritance:
+class Bus extends Vehicle{
+    constructor(name,price,seat,ticket){
+            super(name,price);
+            this.seat=seat;
+            this.ticket=ticket;
+    } 
 
-const A=new Product('Esan','physic');
-console.log(A);
-A.speak('Lenevo');
+    move(){
+        console.log(`Can move`);
+    }
+}
