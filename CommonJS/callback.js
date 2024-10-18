@@ -13,3 +13,9 @@ function GreetEvening(name){
 greeting(greetingHandlers,'Tom');
 greeting(greetingHandlers,'Jeri');
 greeting(GreetEvening,'Jara');
+
+function submitHandler(){
+    console.log('submit button clicked');
+}
+
+document.getElementById('btn-submit').addEventListener('click',submitHandler);
